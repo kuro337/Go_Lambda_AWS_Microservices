@@ -5,7 +5,7 @@ import ("fmt")
 // Pseudocode for Concurrent Rekognition Image Analysis 
 
 // Bucket name is defined as a const
-const bucketName string = "testbucketchinmay"
+const bucketName string = "testbucket"
 
 func main() {
      // Frontend sends us an array containing all image names
