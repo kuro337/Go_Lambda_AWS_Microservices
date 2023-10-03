@@ -13,7 +13,7 @@ import (
 // Pseudocode for Concurrent Rekognition Image Analysis 
 
 // Bucket name is defined as a const
-const bucketName string = "testbucketchinmay"
+const bucketName string = "testbucket"
 
 func main() {
 	lambda.Start(lambdaHandler)
@@ -96,7 +96,7 @@ func getImageResults (s string , ch chan <- *rekognition.DetectLabelsOutput  )  
 	input := &rekognition.DetectLabelsInput{
 Image: &rekognition.Image{
 	S3Object: &rekognition.S3Object{
-			Bucket: aws.String("testbucketchinmay"),
+			Bucket: aws.String("testbucket"),
 			Name:   aws.String(objName),
 	},
 },
