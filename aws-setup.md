@@ -131,7 +131,7 @@ func main() {
         input := &rekognition.DetectLabelsInput{
     Image: &rekognition.Image{
         S3Object: &rekognition.S3Object{
-            Bucket: aws.String("testbucketchinmay"),
+            Bucket: aws.String("testbucket"),
             Name:   aws.String("happy-dog-wears-flowers.jpg"),
         },
     },
